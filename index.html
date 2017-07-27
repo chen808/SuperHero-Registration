@@ -6,31 +6,28 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Title -->
-    <div class="title">
-      <h2>Superhero Registration</h2>
-      <p>Please enter the new candidate</p>
+    <div class="main-container">
+      <!-- Title -->
+      <div class="title">
+        <h2>Superhero Registration</h2>
+        <p>Please enter the new candidate</p>
+      </div>
+      <!-- Form Input -->
+      <div class="form-input-container">
+        <select class="form-clearance-level">
+          <p>Select security clearance level</p>
+          <option value="Level 1">Level 1</option>
+          <option value="Level 2">Level 2</option>
+          <option value="Level 3">Level 3</option>
+          <option value="Level 4">Level 4</option>
+        </select>
+        <input type="text" placeholder="Enter Name" id="form-enter-name" class="form-enter-name">
+        <input type="text" placeholder="Enter Ability" id="form-enter-ability" class="form-enter-ability">
+        <button type="button" class="form-submit-btn">Submit</button>
+      </div>
+      <!-- Display List of Registered Heroes -->
+      <div id="hero-list"></div>
     </div>
-
-    <!-- Form Input -->
-    <div class="form-input-container">
-      <select class="form-clearance-level">
-        <p>Select security clearance level</p>
-        <option value="Level 1">Level 1</option>
-        <option value="Level 2">Level 2</option>
-        <option value="Level 3">Level 3</option>
-        <option value="Level 4">Level 4</option>
-      </select>
-      <input type="text" placeholder="Enter Name" id="form-enter-name" class="form-enter-name">
-      <input type="text" placeholder="Enter Ability" id="form-enter-ability" class="form-enter-ability">
-      <button type="button" class="form-submit-btn"></button>
-    </div>
-
-    <!-- Display List of Registered Heroes -->
-    <div id="hero-list">
-
-    </div>
-
     <script src="main.js"></script>
   </body>
 </html>
