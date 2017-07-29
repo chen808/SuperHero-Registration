@@ -16,7 +16,7 @@ var getStoreVal =  (function(){
     },
     displayDataBase: function() {
       // Create the Html
-      var oldHtml = '<ul><li>%Level%</li><li>%Name%</li><li>%Ability%</li></ul>'
+      var oldHtml = '<li>%Level%</li><li>%Name%</li><li>%Ability%</li>'
       // Testing out heroDataBase array
       console.log(heroDataBase);
       // Loop through heroDataBase object and replace oldHtml

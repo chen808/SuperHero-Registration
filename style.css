@@ -54,12 +54,24 @@ h1, h2, h3, h4, h5, h6, p, a, select {
   font-family: Raleway, sans-serif;
 }
 
+section.register-container {
+  background-color: #56569e; /*top colour*/
+  background-image: -webkit-linear-gradient(top, #56569e, #407886);
+  background-image:    -moz-linear-gradient(top, #56569e, #407886);
+  background-image:      -o-linear-gradient(top, #56569e, #407886);
+  background-image:         linear-gradient(to bottom, #56569e, #407886);
+  padding: 70px 0;
+}
+
 
 .main-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .title {
@@ -67,8 +79,9 @@ h1, h2, h3, h4, h5, h6, p, a, select {
 }
 
 .title h2 {
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
+  color: #5967b7;
 }
 
 .title p {
@@ -80,10 +93,16 @@ h1, h2, h3, h4, h5, h6, p, a, select {
 }
 
 .form-input-container select {
-  border: 1px solid #ccc;
+  border: initial;
   font-size: 12px;
   height: 36px;
   width: 88px;
+}
+
+select, input[type="color" i][list] {
+    background-color: #e4e4e4;
+    position: relative;
+    top: -2px;
 }
 
 input {
@@ -91,6 +110,56 @@ input {
 }
 
 button.form-submit-btn {
-    padding: 12px;
-    border: initial;
+  padding: 12px;
+  border: initial;
+  background-color: #46add6;
+  color: #fff;
+}
+
+section.show-list {
+    padding: 50px 0px;
+}
+
+ul.hero-list-title,
+ul#hero-list {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul#hero-list {
+  margin-top: 30px;
+}
+
+ul.hero-list-title li {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  padding: 30px 0;
+  font-family: raleway, sans-serif;
+  font-weight: 600;
+  color: #496a90;
+}
+
+ul.hero-list-title li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #4c6693;
+    height: 1px;
+    width: 100%;
+}
+
+ul#hero-list li {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  margin-bottom: 30px;
+  font-family: raleway, sans-serif;
+}
+
+ul#hero-list li:nth-child(even) {
+  background-color: gray;
 }
